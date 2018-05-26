@@ -12164,8 +12164,7 @@ a.anchor-link {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="n">exampleFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;D2_01.csv&#39;</span><span class="p">)</span>
 <span class="n">exampleReader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">exampleFile</span><span class="p">)</span>
-<span class="n">exampleData</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">exampleReader</span><span class="p">)</span>
-<span class="n">exampleData</span>
+<span class="n">exampleReader</span>
 </pre></div>
 
 </div>
@@ -12184,13 +12183,7 @@ a.anchor-link {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;DateTime&#39;, &#39;Name&#39;, &#39;Age&#39;, &#39;Sex&#39;],
- [&#39;2018/1/1&#39;, &#39;Olly&#39;, &#39;13&#39;, &#39;F&#39;],
- [&#39;2018/1/2&#39;, &#39;Ollier&#39;, &#39;14&#39;, &#39;F&#39;],
- [&#39;2018/1/3&#39;, &#39;Oil&#39;, &#39;12&#39;, &#39;M&#39;],
- [&#39;2018/1/4&#39;, &#39;Oba&#39;, &#39;16&#39;, &#39;F&#39;],
- [&#39;2018/1/5&#39;, &#39;Oma&#39;, &#39;17&#39;, &#39;M&#39;],
- [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]]</pre>
+<pre>&lt;_csv.reader at 0x7f1b400e1898&gt;</pre>
 </div>
 
 </div>
@@ -12204,7 +12197,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exampleReader</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exampleData</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">exampleReader</span><span class="p">)</span>
+<span class="n">exampleData</span>
 </pre></div>
 
 </div>
@@ -12223,7 +12217,13 @@ a.anchor-link {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;_csv.reader at 0x7fee8c1f8898&gt;</pre>
+<pre>[[&#39;DateTime&#39;, &#39;Name&#39;, &#39;Age&#39;, &#39;Sex&#39;],
+ [&#39;2018/1/1&#39;, &#39;Olly&#39;, &#39;13&#39;, &#39;F&#39;],
+ [&#39;2018/1/2&#39;, &#39;Ollier&#39;, &#39;14&#39;, &#39;F&#39;],
+ [&#39;2018/1/3&#39;, &#39;Oil&#39;, &#39;12&#39;, &#39;M&#39;],
+ [&#39;2018/1/4&#39;, &#39;Oba&#39;, &#39;16&#39;, &#39;F&#39;],
+ [&#39;2018/1/5&#39;, &#39;Oma&#39;, &#39;17&#39;, &#39;M&#39;],
+ [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]]</pre>
 </div>
 
 </div>
@@ -12456,6 +12456,16 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#19968;&#27425;&#23531;&#19968;&#31558;&#36039;&#26009;&#65306;">&#19968;&#27425;&#23531;<strong>&#19968;&#31558;</strong>&#36039;&#26009;&#65306;<a class="anchor-link" href="#&#19968;&#27425;&#23531;&#19968;&#31558;&#36039;&#26009;&#65306;">&#182;</a></h4><blockquote><p>csv_writer.writerow(list)</p>
+</blockquote>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
@@ -12486,12 +12496,22 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#19968;&#27425;&#23531;&#22810;&#31558;&#36039;&#26009;&#65306;">&#19968;&#27425;&#23531;<strong>&#22810;&#31558;</strong>&#36039;&#26009;&#65306;<a class="anchor-link" href="#&#19968;&#27425;&#23531;&#22810;&#31558;&#36039;&#26009;&#65306;">&#182;</a></h4><blockquote><p>csv_writer.writerows(lists)</p>
+</blockquote>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 一次寫多筆資料：</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 先看一下資料：</span>
 <span class="n">exampleData</span>
 </pre></div>
 
@@ -12556,7 +12576,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -12594,7 +12614,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -12653,11 +12673,79 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">JasonString1</span> <span class="o">=</span> <span class="s1">&#39;{&quot;name&quot;: &quot;Olly&quot;, &quot;Female&quot;: true, &quot;Height&quot;: 154, &quot;Weight&quot;: null}&#39;</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">JasonString1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>str</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="n">JasonAsPyValue</span> <span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">JasonString1</span><span class="p">)</span>
+<span class="n">JasonAsPyValue</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;Female&#39;: True, &#39;Height&#39;: 154, &#39;Weight&#39;: None, &#39;name&#39;: &#39;Olly&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">JasonAsPyValue</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12676,7 +12764,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>str</pre>
+<pre>dict</pre>
 </div>
 
 </div>
@@ -12690,9 +12778,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-<span class="n">JasonAsPyValue</span> <span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">JasonString1</span><span class="p">)</span>
-<span class="n">JasonAsPyValue</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">JasonAsPyValue</span><span class="p">[</span><span class="s1">&#39;Height&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12711,7 +12797,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;Female&#39;: True, &#39;Height&#39;: 154, &#39;Weight&#39;: None, &#39;name&#39;: &#39;Olly&#39;}</pre>
+<pre>154</pre>
 </div>
 
 </div>
@@ -12719,13 +12805,24 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Writing-JSON">Writing JSON<a class="anchor-link" href="#Writing-JSON">&#182;</a></h2><h3 id="To-translate-a-Python-value-into-a-string-of-JSON-formatted-data-:">To translate a Python value into a string of JSON-formatted data :<a class="anchor-link" href="#To-translate-a-Python-value-into-a-string-of-JSON-formatted-data-:">&#182;</a></h3><blockquote><p>python object dict -&gt; string</p>
+</blockquote>
+<h3 id="json.dumps()">json.dumps()<a class="anchor-link" href="#json.dumps()">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">JasonAsPyValue</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PyDict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Female&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Height&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Weight&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Ohbo&#39;</span><span class="p">}</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">PyDict</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12752,24 +12849,15 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 </div>
 
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Writing-JSON">Writing JSON<a class="anchor-link" href="#Writing-JSON">&#182;</a></h2><h3 id="To-translate-a-Python-value-into-a-string-of-JSON-formatted-data-:">To translate a Python value into a string of JSON-formatted data :<a class="anchor-link" href="#To-translate-a-Python-value-into-a-string-of-JSON-formatted-data-:">&#182;</a></h3><blockquote><p>python object dict -&gt; string</p>
-</blockquote>
-<h3 id="json.dumps()">json.dumps()<a class="anchor-link" href="#json.dumps()">&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PyDict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Female&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Height&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Weight&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Ohbo&#39;</span><span class="p">}</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">PyDict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="n">PyDictAsJason</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">PyDict</span><span class="p">)</span>
+<span class="n">PyDictAsJason</span>
 </pre></div>
 
 </div>
@@ -12788,41 +12876,6 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>dict</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-<span class="n">PyDictAsJason</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">PyDict</span><span class="p">)</span>
-<span class="n">PyDictAsJason</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
 <pre>&#39;{&#34;Female&#34;: false, &#34;Height&#34;: null, &#34;Weight&#34;: 50, &#34;name&#34;: &#34;Ohbo&#34;}&#39;</pre>
 </div>
 
@@ -12834,7 +12887,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">PyDictAsJason</span><span class="p">)</span>
@@ -12850,7 +12903,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -12895,7 +12948,9 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Step-0-Sign-up-to-access-specific-Key-for-WeatherAPI">Step 0 Sign up to access specific Key for WeatherAPI<a class="anchor-link" href="#Step-0-Sign-up-to-access-specific-Key-for-WeatherAPI">&#182;</a></h1>
+<h1 id="Step-0-Sign-up-to-access-specific-Key-for-WeatherAPI">Step 0 Sign up to access specific Key for WeatherAPI<a class="anchor-link" href="#Step-0-Sign-up-to-access-specific-Key-for-WeatherAPI">&#182;</a></h1><blockquote><p>後面有提供範例檔案</p>
+</blockquote>
+
 </div>
 </div>
 </div></section><section>
@@ -12954,7 +13009,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span><span class="o">,</span> <span class="nn">requests</span>
@@ -13003,7 +13058,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 用 json.loads() 讀取 API 資料：</span>
@@ -13017,7 +13072,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 查看資料有哪些欄位(key值)</span>
@@ -13034,7 +13089,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+<div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -13051,7 +13106,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weatherData</span>
@@ -13067,36 +13122,36 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>{&#39;base&#39;: &#39;stations&#39;,
- &#39;clouds&#39;: {&#39;all&#39;: 40},
+ &#39;clouds&#39;: {&#39;all&#39;: 75},
  &#39;cod&#39;: 200,
  &#39;coord&#39;: {&#39;lat&#39;: 25.04, &#39;lon&#39;: 121.56},
- &#39;dt&#39;: 1525593600,
+ &#39;dt&#39;: 1527327000,
  &#39;id&#39;: 1668341,
- &#39;main&#39;: {&#39;humidity&#39;: 66,
-  &#39;pressure&#39;: 1009,
-  &#39;temp&#39;: 304.15,
-  &#39;temp_max&#39;: 304.15,
+ &#39;main&#39;: {&#39;humidity&#39;: 62,
+  &#39;pressure&#39;: 1005,
+  &#39;temp&#39;: 304.61,
+  &#39;temp_max&#39;: 305.15,
   &#39;temp_min&#39;: 304.15},
  &#39;name&#39;: &#39;Taipei&#39;,
  &#39;sys&#39;: {&#39;country&#39;: &#39;TW&#39;,
   &#39;id&#39;: 7479,
-  &#39;message&#39;: 0.0076,
-  &#39;sunrise&#39;: 1525554879,
-  &#39;sunset&#39;: 1525602386,
+  &#39;message&#39;: 0.0054,
+  &#39;sunrise&#39;: 1527282309,
+  &#39;sunset&#39;: 1527331001,
   &#39;type&#39;: 1},
  &#39;visibility&#39;: 10000,
- &#39;weather&#39;: [{&#39;description&#39;: &#39;scattered clouds&#39;,
-   &#39;icon&#39;: &#39;03d&#39;,
-   &#39;id&#39;: 802,
+ &#39;weather&#39;: [{&#39;description&#39;: &#39;broken clouds&#39;,
+   &#39;icon&#39;: &#39;04d&#39;,
+   &#39;id&#39;: 803,
    &#39;main&#39;: &#39;Clouds&#39;}],
- &#39;wind&#39;: {&#39;deg&#39;: 90, &#39;speed&#39;: 3.1}}</pre>
+ &#39;wind&#39;: {&#39;deg&#39;: 280, &#39;speed&#39;: 5.7}}</pre>
 </div>
 
 </div>
@@ -13118,7 +13173,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">exampleJSONFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;D2_json.txt&#39;</span><span class="p">)</span>
@@ -13130,6 +13185,49 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;base&#39;: &#39;stations&#39;,
+ &#39;clouds&#39;: {&#39;all&#39;: 40},
+ &#39;cod&#39;: 200,
+ &#39;coord&#39;: {&#39;lat&#39;: 25.04, &#39;lon&#39;: 121.56},
+ &#39;dt&#39;: 1526785200,
+ &#39;id&#39;: 1668341,
+ &#39;main&#39;: {&#39;humidity&#39;: 63,
+  &#39;pressure&#39;: 1009,
+  &#39;temp&#39;: 306.07,
+  &#39;temp_max&#39;: 307.15,
+  &#39;temp_min&#39;: 305.15},
+ &#39;name&#39;: &#39;Taipei&#39;,
+ &#39;sys&#39;: {&#39;country&#39;: &#39;TW&#39;,
+  &#39;id&#39;: 7479,
+  &#39;message&#39;: 0.0125,
+  &#39;sunrise&#39;: 1526764037,
+  &#39;sunset&#39;: 1526812412,
+  &#39;type&#39;: 1},
+ &#39;visibility&#39;: 10000,
+ &#39;weather&#39;: [{&#39;description&#39;: &#39;scattered clouds&#39;,
+   &#39;icon&#39;: &#39;03d&#39;,
+   &#39;id&#39;: 802,
+   &#39;main&#39;: &#39;Clouds&#39;}],
+ &#39;wind&#39;: {&#39;deg&#39;: 310, &#39;speed&#39;: 3.6}}</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13150,7 +13248,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">city</span> <span class="o">=</span> <span class="n">weatherData</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
@@ -13193,7 +13291,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 
 <div class="output_text output_subarea ">
-<pre>1525593600</pre>
+<pre>1526785200</pre>
 </div>
 
 </div>
@@ -13226,7 +13324,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
@@ -13244,13 +13342,13 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[27]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2018-05-06 16:00:00&#39;</pre>
+<pre>&#39;2018-05-20 11:00:00&#39;</pre>
 </div>
 
 </div>
@@ -13271,7 +13369,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">w_main</span> <span class="o">=</span> <span class="n">weather</span><span class="p">[</span><span class="s1">&#39;main&#39;</span><span class="p">]</span>
@@ -13285,7 +13383,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span>
@@ -13342,7 +13440,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;~~ Current Wheather ~~&#39;</span><span class="p">)</span>
@@ -13367,7 +13465,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>~~ Current Wheather ~~
 ★ Location :	 Taipei
-★ Date Time :	 2018-05-06 16:00:00
+★ Date Time :	 2018-05-20 11:00:00
 ★ Weather :	 Clouds - scattered clouds
 </pre>
 </div>
@@ -13468,7 +13566,7 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span><span class="o">,</span> <span class="nn">json</span><span class="o">,</span> <span class="nn">requests</span><span class="o">,</span> <span class="nn">datetime</span>
@@ -13515,15 +13613,14 @@ Row #7 [&#39;2018/1/6&#39;, &#39;Ohya&#39;, &#39;18&#39;, &#39;F&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;Taipei&#39;</span>
 
 <span class="n">csvfile_path</span> <span class="o">=</span> <span class="s1">&#39;D2_Exercise.csv&#39;</span>
 
-<span class="n">APPID</span> <span class="o">=</span> <span class="s1">&#39;fit your API key..._&#39;</span> <span class="c1"># &lt;-- FIT your key here!</span>
-
+<span class="c1">#APPID = &#39;fit your API key..._&#39; # &lt;-- FIT your key here!</span>
 <span class="n">Forecast30hrs</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">csvfile_path</span><span class="p">,</span> <span class="n">APPID</span><span class="p">)</span>
 </pre></div>
 
