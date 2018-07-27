@@ -17,7 +17,7 @@ You can also find the slides of this series below.
 + [**Day 1:Work with Excel files in Python**](https://bijenchen.github.io/PyLadies_Automate_20180429Excel/Day1_Python_Deal_Excel.slides.html#/)
 + [**Day 2:Work with CSV files & JSON in Python**](https://amberfu.github.io/PyLadies_Automate_JSON_CSV/Day2_Work_with_CSV_files_and_JSON_in_Python.slides.html#/)
 + [**Day 3:Task Schedule**](https://iamshihshan.github.io/PyOlly_AutomateTutorial/Day3_Python_Task_Schedule.slides.html#/)
-+ [**Day 4:Python Sending Email**](Undo URL)
++ [**Day 4:Python Sending Email**](https://jamiewei-tw.github.io/PyLadies_AutomateTutorial/Day4_Python_Sending_Email.slides.html#/)
 + [**Day 5:Control Mouse & Keyboard**](Undo URL)
 
 ## About PyLadies Taiwan
